@@ -11,6 +11,21 @@ public class Student {
     Major major;//ComputerScience, Business, Psychology, Communications
     LocalDate dateOfBirth;
 
+    public Student() {
+        name = "Unknown Student";
+        GPA = 1.0f;
+        isVeteran = false;
+    }
+
+    public Student(String name, LocalDate dob){
+        this.name = name;
+        dateOfBirth = dob;
+    }
+    public Student(String name){
+        this.name = name;
+        
+    }
+
     public String toString(){
         return name + " " + major;
 
